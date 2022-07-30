@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { GetServerSidePropsContext } from 'next';
 import { useState } from 'react';
 import { AppProps } from 'next/app';
@@ -25,7 +26,7 @@ export default function App(props: AppProps & { colorScheme: ColorScheme }) {
       </Head>
 
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
-        <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
+        <MantineProvider theme={{ colorScheme, fontFamily: 'Raleway, sans serif', spacing: { xs: 15, sm: 20, md: 25, lg: 30, xl: 40 } }} withGlobalStyles withNormalizeCSS>
           <NotificationsProvider>
             <Component {...pageProps} />
           </NotificationsProvider>

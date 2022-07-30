@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import { ActionIcon, Group, useMantineColorScheme } from '@mantine/core';
 import { SunIcon, MoonIcon } from '@modulz/radix-icons';
 
